@@ -14,10 +14,12 @@ formSelect.addEventListener('change', (e) => {
     // switch по значению Select
 
     switch (value) {
-        case 'SIP':  // если значнение "SIP" отрисуй items для SIP
+        case 'SIP':
+            // если значнение "SIP" отрисуй items для SIP
             renderSIPItems()
             break
-        case 'IAX': // если значнение "IAX" отрисуй items для IAX
+        case 'IAX':
+            // если значнение "IAX" отрисуй items для IAX
             renderIAXItems()
             break
         default:
@@ -27,7 +29,7 @@ formSelect.addEventListener('change', (e) => {
 
 
 
-// ренедерим айтемы при выбранном SIP
+//  функция ренедеринга айтемов при выбранном SIP
 
 const renderSIPItems = () => {
     formInner.innerHTML = '' //очищаем предыдущее значнение 
@@ -36,10 +38,14 @@ const renderSIPItems = () => {
 
 }
 
-// ренедерим айтемы при выбранном IAX
+// функция ренедеринга айтемов при выбранном IAX
 
 const renderIAXItems = () => {
     formInner.innerHTML = '' //очищаем предыдущее значнение 
 
-    formInner.innerHTML = `<label>IAX</label><input type='text' class="w3-input" />` // записываем новое
+    formInner.innerHTML = `<label>IAX</label><input type='text' class="w3-input" />
+                            <label>IAX</label><input type='text' class="w3-input" />
+                            <label>IAX</label><input type='text' class="w3-input" />
+                            <label>IAX</label><input type='text' class="w3-input" />
+                            <label>IAX</label><input type='text' class="w3-input" />` // записываем новое
 }
